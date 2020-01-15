@@ -1,0 +1,18 @@
+<div>
+    {{#each plans}}
+    <div>
+        <p>
+            {{title}}
+
+            {{#each exercises}}
+            <p>
+                {{title}}
+            </p>
+            {{/each}}
+        </p>
+        <button class="delete" data-planid={{_id}}>delete</button>
+        <input class="exerciseInput" placeholder="New Exercise">
+        <button class="addExercise" data-planid={{_id}}>Add Exercise</button>
+    </div>
+    {{/each}}
+</div>
